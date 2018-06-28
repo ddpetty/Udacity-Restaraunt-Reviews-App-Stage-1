@@ -1,1 +1,1 @@
-# Udacity Restaraunt Reviews App Stage 1
+# Udacity Restaurant Reviews App Stage 1
