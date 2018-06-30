@@ -78,7 +78,7 @@ section {
 }
 
 #footer {
-  background-color: #444;
+  background-color: #000000;
   color: #aaa;
   font-size: 8pt;
   letter-spacing: 1px;
@@ -134,14 +134,15 @@ nav h1 a {
 /* Add a color to all links inside the list */
 
 #breadcrumb li a {
-  color: #0275d8;
+  color: #01447e;
+  
   text-decoration: none;
 }
 
 /* Add a color on mouse-over */
 
 #breadcrumb li a:hover {
-  color: #01447e;
+  color: #2878af;
   text-decoration: underline;
 }
 
@@ -158,7 +159,7 @@ nav h1 a {
 .filter-options {
   width: 100%;
   height: 50px;
-  background-color: #3397DB;
+  background-color:#2878af;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -174,7 +175,8 @@ nav h1 a {
   margin: 0 20px;
 }
 
-.filter-options select {
+.filter-options select,
+.filter-options label > select  {
   background-color: white;
   border: 1px solid #fff;
   font-family: Arial, sans-serif;
@@ -239,7 +241,7 @@ nav h1 a {
 #restaurants-list li a {
   background-color: orange;
   border-bottom: 3px solid #eee;
-  color: #fff;
+  color: #000000;
   display: inline-block;
   font-size: 10pt;
   margin: 15px 0 0;

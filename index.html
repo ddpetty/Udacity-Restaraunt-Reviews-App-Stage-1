@@ -13,29 +13,32 @@
 </head>
 
 <body>
-  <header>
-    <nav>
+  <header role="banner">
+    <nav role="navigation">
       <h1>
         <a href="/">Restaurant Reviews</a>
       </h1>
     </nav>
   </header>
 
-  <main id="maincontent">
-    <section id="map-container">
+  <main id="maincontent" role="main">
+    <section id="map-container" role="region">
       <div id="map"></div>
     </section>
-    <section>
+    <section role="region">
       <div class="filter-options">
-        <h2>Filter Results</h2>
+        <label for="neighborhoods-select"><h2>Filter Results</h2></label>        
         <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
-        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
-          <option value="all">All Cuisines</option>
-        </select>
+        <label for="cuisines-select">
+            <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+                <option value="all">All Cuisines</option>
+              </select>
+        </label>
+        
       </div>
-      <ul id="restaurants-list"></ul>
+      <ul id="restaurants-list" role="list"></ul>
     </section>
   </main>
 
@@ -43,10 +46,10 @@
   <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
   <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhommPbHt0OO3_unsIC-Xr8_5EGtArlf4"></script>
-  
 
 
-  <footer id="footer">
+
+  <footer id="footer" role="contentinfo">
     Copyright (c) 2017
     <a href="/">
       <strong>Restaurant Reviews</strong>
