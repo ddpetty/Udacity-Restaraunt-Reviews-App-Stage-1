@@ -135,7 +135,6 @@ nav h1 a {
 
 #breadcrumb li a {
   color: #01447e;
-  
   text-decoration: none;
 }
 
@@ -159,7 +158,7 @@ nav h1 a {
 .filter-options {
   width: 100%;
   height: 50px;
-  background-color:#2878af;
+  background-color: #2878af;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -176,7 +175,7 @@ nav h1 a {
 }
 
 .filter-options select,
-.filter-options label > select  {
+.filter-options label>select {
   background-color: white;
   border: 1px solid #fff;
   font-family: Arial, sans-serif;
@@ -360,6 +359,7 @@ nav h1 a {
 
 #reviews-list li p {
   margin: 0 0 10px;
+  font-size: 1.0rem;
 }
 
 #restaurant-hours td {
@@ -371,7 +371,6 @@ nav h1 a {
 /* Tablets and up*/
 
 @media (min-width: 768px) {
-  /* Home */
   #restaurants-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -384,7 +383,6 @@ nav h1 a {
     flex-direction: row;
     justify-content: center;
   }
-  /* Restaurants */
   #breadcrumb li {
     font-size: 1.3rem;
   }

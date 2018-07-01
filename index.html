@@ -23,22 +23,23 @@
 
   <main id="maincontent" role="main">
     <section id="map-container" role="region">
-      <div id="map"></div>
+      <div id="map" aria-label="Map container"></div>></div>
     </section>
     <section role="region">
       <div class="filter-options">
-        <label for="neighborhoods-select"><h2>Filter Results</h2></label>        
+        <label for="neighborhoods-select">
+          <h2>Filter Results</h2>
+        </label>
         <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
         <label for="cuisines-select">
-            <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
-                <option value="all">All Cuisines</option>
-              </select>
+          <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+            <option value="all">All Cuisines</option>
+          </select>
         </label>
-        
       </div>
-      <ul id="restaurants-list" role="list"></ul>
+      <ul id="restaurants-list" role="list" aria-label="List of restaurants"></ul>></ul>
     </section>
   </main>
 
